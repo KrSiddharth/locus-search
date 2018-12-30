@@ -1,0 +1,73 @@
+.App {
+  max-width: 400px;
+  margin: 40px auto;
+  box-shadow: 0 1px 6px 0 rgba(32,33,36,0.28);
+  outline: none;
+}
+
+input {
+  width: 400px;
+  outline: none;
+  border: none;
+  border-bottom: 1px solid #DFE1E4;
+  font-size: 18px;
+  padding: 10px;
+  box-sizing: border-box;
+}
+
+.searchResults {
+  text-align: left;
+  max-height: 300px;
+  overflow-y: scroll;
+  font-size: 16px;
+  color: #5f6368;
+}
+
+.searchCard {
+  padding: 10px;
+  border-bottom: 1px solid #DFE1E4;
+  cursor: pointer;
+}
+
+.searchCard.highlight {
+  background: #FCF3CF;
+}
+
+div.id {
+  color: #000;
+  font-weight: bold;
+}
+
+div.name {
+  font-style: italic;
+}
+
+span.highlight {
+  color:#2874A6;
+  font-weight:bold;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 10px;
+}
+
+.noResultCard {
+  height: 150px;
+  position: relative;
+}
+
+.noResultCard span {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
